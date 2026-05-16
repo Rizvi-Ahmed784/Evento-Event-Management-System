@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #fff7ec;
+  color: #666;
+}
+
+/* Header */
+.top-bar {
+  width: 100%;
+  min-height: 54px;
+  background: #fff7ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  border-bottom: 1px solid #f0b58a;
+}
+
+.brand img {
+  width: 70px;
+  display: block;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #777;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 3px;
+}
+
+.main-nav a:hover {
+  color: #f28c00;
+}
+
+.logout {
+  text-decoration: none;
+  background: #f28c00;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+/* Main Profile Area */
+.profile-page {
+  min-height: 565px;
+  padding: 48px 20px 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card {
+  width: 430px;
+  max-width: 92vw;
+  min-height: 318px;
+  border: 1px solid #7e6bb1;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 18px 52px 24px;
+}
+
+.profile-top {
+  text-align: center;
+}
+
+.profile-img {
+  width: 86px;
+  height: 86px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e8c7c7;
+  margin-bottom: 8px;
+}
+
+.profile-top h1 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 7px;
+}
+
+.handle {
+  color: #888;
+  font-size: 14px;
+}
+
+.edit-icon {
+  color: #6a5bb8;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 7px;
+}
+
+.profile-info {
+  margin-top: 24px;
+  display: grid;
+  grid-template-columns: 120px 1fr 20px;
+  row-gap: 18px;
+  align-items: center;
+  font-size: 15px;
+}
+
+.info-label {
+  color: #222;
+  font-weight: 700;
+}
+
+.info-value {
+  color: #777;
+}
+
+.event-list {
+  width: 430px;
+  max-width: 92vw;
+  min-height: 150px;
+  background: rgba(150, 100, 85, 0.18);
+  margin-top: 30px;
+  padding: 18px 83px;
+}
+
+.event-list h2 {
+  color: red;
+  font-size: 16px;
+  margin-bottom: 17px;
+  font-weight: 500;
+}
+
+.event-list ol {
+  color: #111;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  background: #f39c12;
+  color: white;
+  padding: 34px 58px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 2fr;
+  gap: 34px;
+}
+
+.footer_box h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.footer_box p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.footer_box a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 9px;
+}
+
+.footer_about img {
+  width: 82px;
+  margin-bottom: 12px;
+}
+
+.socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.socials a {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #3b5998;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  margin: 0;
+}
+
+#subscribe_box {
+  width: 100%;
+  max-width: 330px;
+  height: 43px;
+  background: white;
+  border-radius: 30px;
+  margin-top: 22px;
+  display: flex;
+  overflow: hidden;
+}
+
+#subscribe_box input {
+  flex: 1;
+  border: 0;
+  outline: 0;
+  padding-left: 18px;
+  font-size: 12px;
+}
+
+#subscribe_box button {
+  width: 125px;
+  border: 0;
+  background: red;
+  color: white;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+#copyright {
+  width: 100%;
+  background: #ee910f;
+  color: white;
+  text-align: center;
+  padding: 14px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.35);
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 850px) {
+  .top-bar {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 12px 18px;
+  }
+
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+  }
+
+  .profile-card {
+    padding: 18px 25px 24px;
+  }
+
+  .profile-info {
+    grid-template-columns: 105px 1fr 20px;
+  }
+
+  .event-list {
+    padding: 18px 50px;
+  }
+
+  #footer {
+    grid-template-columns: 1fr;
+    padding: 30px 25px;
+  }
+}
